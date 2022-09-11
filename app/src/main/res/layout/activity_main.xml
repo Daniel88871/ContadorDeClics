@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contadorgeneral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:text="0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/reset1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.582" />
+
+    <Button
+        android:id="@+id/resetall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF9800"
+        android:text="Reset all"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/boton1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toEndOf="@+id/contadorgeneral"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.592" />
+
+    <TextView
+        android:id="@+id/contador1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="84dp"
+        android:text="0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/contador2"
+        app:layout_constraintEnd_toStartOf="@+id/boton1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetall"
+        app:layout_constraintVertical_bias="0.973" />
+
+    <Button
+        android:id="@+id/boton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/boton2"
+        app:layout_constraintEnd_toStartOf="@+id/reset1" />
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/reset2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resetall"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/contador2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:text="0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/contador3"
+        app:layout_constraintEnd_toStartOf="@+id/boton2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/boton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/boton3"
+        app:layout_constraintEnd_toStartOf="@+id/reset2" />
+
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/reset3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/contador3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="85dp"
+        android:text="0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/contador4"
+        app:layout_constraintEnd_toStartOf="@+id/boton3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/boton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/boton4"
+        app:layout_constraintEnd_toStartOf="@+id/reset3" />
+
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="70dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/reset4"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/contador4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="163dp"
+        android:text="0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/boton4"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/boton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="#4CAF50"
+        android:text="+1"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/reset4" />
+
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="156dp"
+        android:backgroundTint="#FFC107"
+        android:text="RESET"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
